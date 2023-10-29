@@ -62,11 +62,13 @@ def main():
                 print("Dealer has blackjack.")
                 if insurance.lower() == 'n':
                     cashBalance -= currBet                            # calculation only carried out when decision is made
+                    cashBalance += 2 * insuranceBet
                 break
             else:
                 print("Nobody home!")
         
         while playerVal < 22:
+            action = input("Do you want to hit")
             if playerVal == 21:
                 break
             
