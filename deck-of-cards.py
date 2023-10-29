@@ -1,2 +1,2 @@
-values = [range(2,14)]
+values = list(range(2,15))
 print(values)
