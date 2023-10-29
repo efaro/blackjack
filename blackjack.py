@@ -1,4 +1,5 @@
 import random
+
 def createDeck():
     suits = ["hearts", "diamonds", "clubs", "spades"]
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace']
@@ -64,6 +65,11 @@ def main():
                 break
             else:
                 print("Nobody home!")
+        
+        while playerVal < 22:
+            if playerVal == 21:
+                break
+            
             
 
             
