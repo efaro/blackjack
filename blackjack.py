@@ -28,11 +28,13 @@ def main():
     deck = createDeck()
     playerHand = [deck.pop(), deck.pop()]
     dealerHand = [deck.pop(), deck.pop()]
-    cashBalance = 1000                      # maybe implement some sort of input in the form of a deposit
+    cashBalance = 1000                                      # maybe implement some sort of input in the form of a deposit
 
     while cashBalance > 0:
         currBet = int(input("Place your bets please: "))    # bets placed
+        #playerCards = 
         print(f"Balance: ${cashBalance - currBet}")         # print new balance after bet is placed
+        #dealerCards = dealerHand[1]["rank"] + dealerHand[1]["suit"][0]
         print(f"Dealer shows:  {dealerHand[1]}")            # show the second card dealt to the dealer
         print(f"You show: {playerHand}")                    # show both of the players cards
         
