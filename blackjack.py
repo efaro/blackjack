@@ -31,15 +31,15 @@ def main():
     cashBalance = 1000                      # maybe implement some sort of input in the form of a deposit
 
     while cashBalance > 0:
-        currBet = input("Place your bets please: ")     # bets placed
-        print(f"Balance: ${cashBalance - currBet}")     # print new balance after bet is placed
-        print(f"Dealer shows:  {dealerHand[1]}")        # show the second card dealt to the dealer
-        print(f"You show: {playerHand}")                # show both of the players cards
+        currBet = int(input("Place your bets please: "))    # bets placed
+        print(f"Balance: ${cashBalance - currBet}")         # print new balance after bet is placed
+        print(f"Dealer shows:  {dealerHand[1]}")            # show the second card dealt to the dealer
+        print(f"You show: {playerHand}")                    # show both of the players cards
         
-        playerVal, _ = calculateHand(playerHand)        # calculate the value of the players hand
-        dealerVal, _ = calculateHand(dealerHand)        # calculate the value of the dealers hand
+        playerVal, _ = calculateHand(playerHand)            # calculate the value of the players hand
+        dealerVal, _ = calculateHand(dealerHand)            # calculate the value of the dealers hand
 
-        if playerVal == 21:                             # checking for blackjack from player
+        if playerVal == 21:                                 # checking for blackjack from player
             print("Blackjack!")
             cashBalance += 1.5 * currBet
             break
@@ -67,27 +67,11 @@ def main():
             else:
                 print("Nobody home!")
         
-        while playerVal < 22:
-            action = input("Do you want to hit")
-            if playerVal == 21:
-                break
-            
-            
+        # while playerVal < 22:
+        #     action = input("Do you want to hit")
+        #     if playerVal == 21:
+        #         break
 
-            
-                
-            
-
-        # Cases
-        # if 2 aces split
-
-            # Hit
-
-            # Stand
-
-            # Double
-
-            # 
-        
+main()
 
 
