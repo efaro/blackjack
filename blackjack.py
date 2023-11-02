@@ -24,6 +24,10 @@ def calculateHand(hand):
         value -= 10
         numAces -= 1
     return value, numAces
+
+def hit():
+    numberCards = 
+    playerhand.insert()
 def main():
     deck = createDeck()
     playerHand = [deck.pop(), deck.pop()]
